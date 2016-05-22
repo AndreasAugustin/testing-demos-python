@@ -2,4 +2,10 @@ language: python
 
 install: "pip install -r requirements.txt"
 
-script: nosetests
+script:
+  - nosetests
+#  - coverage run
+
+addons:
+    code_climate:
+        repo_token: d79746aa30a411ad8e89aa0d61a236d920787c507a2b808fd973d9d922cc6b87
